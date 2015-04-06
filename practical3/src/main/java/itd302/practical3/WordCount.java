@@ -65,6 +65,6 @@ public class WordCount extends Configured implements Tool {
 /*
 mvn package
 hadoop dfs -rmr output
-hadoop jar target/practical3-0.1.jar itd302.practical3.WordCount data/ output/ 
+hadoop jar target/practical3-0.1.jar itd302.practical3.WordCount practical3/data/ output/ 
 
  */
