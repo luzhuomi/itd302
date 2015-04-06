@@ -2,14 +2,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>itd302.practical2</groupId>
-    <artifactId>practical2</artifactId>
+    <groupId>itd302.practical3</groupId>
+    <artifactId>practical3</artifactId>
     <packaging>jar</packaging>
     <version>0.1</version>
     <name>Hadoop Starter Exercise</name>
     <url></url>
     <organization>
-        <name>org.collamine</name>
+        <name>itd302</name>
     </organization>
 
     <properties>
@@ -47,7 +47,7 @@
             <artifactId>hadoop-common</artifactId>
             <version>${hadoop.version}</version>
         </dependency>
-        
+
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-core</artifactId>

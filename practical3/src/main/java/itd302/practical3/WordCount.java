@@ -65,6 +65,6 @@ public class WordCount extends Configured implements Tool {
 /*
 mvn package
 hadoop dfs -rmr output
-/opt/hadoop-1.2.1/bin/hadoop jar target/hadoopstarter-0.1.jar org.collamine.hadoopstarter.WordCount input/ output/ 
+hadoop jar target/practical3-0.1.jar itd302.practical3.WordCount data/ output/ 
 
  */
