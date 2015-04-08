@@ -39,7 +39,46 @@
 
     <build>
         <plugins>
-            <!-- replaced by maven-shaded-plugin
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>    
+            <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.2.1</version>
+                    <executions>
+                            <execution>
+                                    <id>default-cli</id>
+                                    <goals>
+                                            <goal>java</goal>
+                                    </goals>
+                                    <configuration>
+                                            <mainClass>itd302.practical3a.Main
+                                            </mainClass>
+                                    </configuration>
+                            </execution>
+                    </executions>
+            </plugin>                    
+            <!--
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-jar-plugin</artifactId>
+              <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>itd302.practical3a.Main</mainClass>
+                    </manifest>
+                </archive>                
+              </configuration>
+            </plugin>
+            -->     
+            <!--
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
@@ -48,7 +87,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass></mainClass>
+                            <mainClass>itd302.practical3a.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -63,25 +102,6 @@
                 </executions>
             </plugin>
             -->
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-jar-plugin</artifactId>
-              <configuration>
-                <excludes>
-                  <exclude>META-INF/license</exclude>
-                  <exclude>META-INF/LICENSE</exclude>
-                </excludes>
-              </configuration>
-            </plugin>            
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>            
         </plugins>
     </build>
 
