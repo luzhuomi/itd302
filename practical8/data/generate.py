@@ -11,7 +11,6 @@ def gen(num_of_records, filename):
 	f.close()
 
 
-
 if __name__ == "__main__":
 	if len(sys.argv) > 2:
 		sys.exit(gen(sys.argv[1],sys.argv[2]))
