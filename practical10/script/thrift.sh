@@ -1,0 +1,1 @@
+sbin/start-thriftserver.sh --jars lib/hive-hbase-handler-1.2.1.jar,lib/hbase-common-1.1.2.jar,lib/hbase-server-1.1.2.jar,lib/hbase-client-1.1.2.jar,lib/protobuf-java-2.5.0.jar,lib/guava-12.0.1.jar,lib/hbase-protocol-1.1.2.jar,lib/htrace-core-3.1.0-incubating.jar,lib/mysql-connector-java.jar
