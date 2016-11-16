@@ -15,7 +15,7 @@ public class UDFRemoveLink extends UDF
 
 	public UDFRemoveLink() 
 	{
-		this.pattern = Pattern.compile("http(:?s?)://[a-zA-Z0-9\\./\\-\\+@]+");
+		this.pattern = Pattern.compile("http(?:s?)://[a-zA-Z0-9\\./\\-\\+@]+");
 	};
 
 	public String evaluate(String text) 
