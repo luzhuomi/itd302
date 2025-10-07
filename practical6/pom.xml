@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hive.version>2.3.4</hive.version>
-		<hadoop.version>3.4.0</hadoop.version>
+		<hive.version>4.0.1</hive.version>
+		<hadoop.version>2.10.1</hadoop.version>
 	</properties>
 
 	<repositories>
